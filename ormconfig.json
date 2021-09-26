@@ -1,0 +1,13 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3303,
+  "username": "root",
+  "password": "password",
+  "database": "blog",
+  "entities": ["dist/**/*.entity,.js"],
+  "migrations": ["dist/migrations/*.js"],
+  "cli": {
+      "migrationsDir": "src/migrations"
+  }
+}
