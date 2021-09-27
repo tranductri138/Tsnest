@@ -5,7 +5,7 @@
   "username": "root",
   "password": "password",
   "database": "blog",
-  "entities": ["dist/**/*.entity,.js"],
+  "entities": ["dist/**/*.entity.js"],
   "migrations": ["dist/migrations/*.js"],
   "cli": {
       "migrationsDir": "src/migrations"

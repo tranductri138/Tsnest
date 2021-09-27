@@ -2,6 +2,9 @@ import { Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateCol
 import { Admin } from '../../admin/entities/admin.entity';
 import { Category } from '../../category/entities/categories.entity';
 import { Comment } from '../../comment/entities/comment.entity';
+
+
+
 @Entity("blog")
 export class Blog {
 
