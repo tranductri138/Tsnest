@@ -1,21 +1,18 @@
-import { Blog } from "src/blog/entities/blog.entity";
-import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm"
+import { Blog } from 'src/blog/entities/blog.entity';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity("category")
+@Entity('category')
 export class Category {
-    @PrimaryGeneratedColumn()
-    id: number;
+  @PrimaryGeneratedColumn()
+  categoryId: number;
 
-    @Column()
-    description: string;
+  @Column()
+  description: string;
 
-
-    @ManyToOne(() => Blog, blog => blog.categories, {
-        onDelete: 'CASCADE',
-        cascade: true,
-        nullable: false
-    })
-    blog: Blog
-
-
+  @ManyToOne(() => Blog, (blog) => blog.categories, {
+    onDelete: 'CASCADE',
+    cascade: true,
+    nullable: false,
+  })
+  blog: Blog;
 }
